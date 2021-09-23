@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>pre task</title>
+        <link rel="stylesheet" href="pre task.css">
+        <script>
+            function ChangeColor(color){
+                document.body.style.background = 'linear-gradient(' + color + ')';
+                document.getElementById("button1").style.background = 'linear-gradient(' + color + ')';
+                document.getElementById("button2").style.background = 'linear-gradient(' + color + ')';
+                document.getElementById("button3").style.background = 'linear-gradient(' + color + ')';
+                document.getElementById("button4").style.background = 'linear-gradient(' + color + ')';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <ul class="nav_list">
+                <li>
+                    <input type="button" id="button4" value="STYLE 1" onclick="ChangeColor('135deg, #71b7e6,#9b59b6')">
+                </li>
+                <li>
+                    <input type="button" id="button3" value="STYLE 2" onclick="ChangeColor('135deg, #91ff4d,#faf431')">
+                </li>
+                <li>
+                    <input type="button" id="button2" value="STYLE 3" onclick="ChangeColor('135deg, rgb(255 77 126), rgb(98 250 49)')">
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="title">SING UP</div>
+            <form action="#" id="form">
+                <div class="user-details" id="form">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        <input type="text" class="data" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" class="data" placeholder="Enter your password" required minlength="6">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">E-mail</span>
+                        <input type="email" class="data" placeholder="Enter your e-mail" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" id="button1" value="SEND">
+                </div>
+            </form>
+        </div>
+        <script src="pre task.js"></script>
+    </body>
+</html>
